@@ -1,0 +1,104 @@
+/*** HEADER ***/
+
+#header {
+	height: 90px;
+	position: relative;
+	/*background: #efefef;*/
+    /*background: lightsalmon;*/
+    background: @blue;
+	padding: 0px 35px;
+	z-index: 1007;
+	border-radius: 0px 0px 0px 0px;
+	margin-bottom:5px;
+	width:100%;
+	color:white;
+
+	h1 {
+		width: 300px;
+		height: 55px;
+		overflow: hidden;
+		margin: 9px 0px 0px -25px;
+		position: absolute;
+		top: 10px;
+		cursor: pointer;
+		font-size: 48px;
+		color: @white;
+	}
+
+	#headerVersion {
+	    font-size: 10px;
+	    position: absolute;
+	    top: 45px;
+	    left: 28px;
+	}
+
+	#menuTop1 {
+		position: absolute;
+		right: 16px;
+		top: 11px;
+		font-size: 11px;
+		/*color: @darken-gray-3;*/
+
+		a, a:hover, a:link, a:visited {
+			/*color: @darken-gray-3;*/
+			color:white;
+			font-size: 11px;
+		}
+		li {
+			padding-left: 0;
+		    padding-right: 6.7px;
+		}
+
+		li:last-child a {
+			font-size: 10px;
+		}
+	}
+
+	#menuTop2 {
+		position: absolute;
+		right: 15px;
+		top: 35px;
+		font-size: 13pt;
+
+		li {
+			margin-left: 15px;
+			cursor: pointer;
+		}
+	
+		li:last-child {
+			padding-left: 21px;
+			border-left: 1px solid #dedede;
+			button{
+
+			}
+		}
+
+		img {
+			border-radius: 20px;
+			max-width: 40%;
+    		height: auto;
+    		margin: auto;
+		}
+		
+		a {
+			/*color: @black;*/
+			color: white;
+
+		 	&:hover, a:link {
+			 	/*color: @light-blue;
+			 	color: chocolate;*/
+			 	color: black;
+			 	text-decoration: none;
+
+			 	&.no-active {
+			 		color:green;
+			 	}
+	 		}
+		}
+	}
+}
+
+.fixHeader {
+    position:fixed !important;
+    z-index: 1009 !important;
+}

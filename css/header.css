@@ -1,0 +1,86 @@
+/*** HEADER ***/
+#header {
+  height: 71px;
+  position: relative;
+  /*background: #efefef;*/
+  background: lightsalmon;
+  padding: 0px 35px;
+  z-index: 1007;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-left: 6px;
+  width: 99%;
+  color: white;
+}
+#header h1 {
+  width: 300px;
+  height: 55px;
+  overflow: hidden;
+  margin: 9px 0px 0px -25px;
+  position: absolute;
+  top: 10px;
+  cursor: pointer;
+  font-size: 26px;
+  color: black;
+}
+#header #headerVersion {
+  font-size: 10px;
+  position: absolute;
+  top: 45px;
+  left: 28px;
+}
+#header #menuTop1 {
+  position: absolute;
+  right: 16px;
+  top: 11px;
+  font-size: 11px;
+  /*color: @darken-gray-3;*/
+}
+#header #menuTop1 a,
+#header #menuTop1 a:hover,
+#header #menuTop1 a:link,
+#header #menuTop1 a:visited {
+  /*color: @darken-gray-3;*/
+  color: white;
+  font-size: 11px;
+}
+#header #menuTop1 li {
+  padding-left: 0;
+  padding-right: 6.7px;
+}
+#header #menuTop1 li:last-child a {
+  font-size: 10px;
+}
+#header #menuTop2 {
+  position: absolute;
+  right: 15px;
+  top: 35px;
+  font-size: 13pt;
+}
+#header #menuTop2 li {
+  margin-left: 15px;
+  cursor: pointer;
+}
+#header #menuTop2 li:last-child {
+  padding-left: 21px;
+  border-left: 1px solid #dedede;
+}
+#header #menuTop2 a {
+  /*color: @black;*/
+  color: white;
+}
+#header #menuTop2 a:hover,
+#header #menuTop2 a a:link {
+  /*color: @light-blue;
+			 	color: chocolate;*/
+  color: black;
+  text-decoration: none;
+}
+#header #menuTop2 a:hover.no-active,
+#header #menuTop2 a a:link.no-active {
+  color: green;
+}
+.fixHeader {
+  position: fixed !important;
+  z-index: 1009 !important;
+}

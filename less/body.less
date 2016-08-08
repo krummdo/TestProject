@@ -1,0 +1,106 @@
+/*** BODY ***/
+
+body {
+		
+	width:100%;
+    overflow-x: hidden;
+
+    #barraPilla{
+        background: @light-blue;
+        height:40px;
+        margin-bottom:6px;
+        border-radius: 0px 0px 0px 0px;
+        padding: 3px 0px 3px 60px;
+
+        ul:first-child{
+            margin-left:10px;
+        }
+
+        ul:not(first-child){
+            margin-left:5px;
+        }
+
+    }
+
+     #barraPilla2{
+        background: @dark-gray;
+        height:40px;
+        margin-bottom:6px;
+        border-radius: 0px 0px 0px 0px;
+        padding: 3px 0px 3px 0px;
+
+        ul:first-child{
+            margin-left:10px;
+        }
+
+        ul:not(first-child){
+            margin-left:5px;
+        }
+
+    }
+
+	table thead {
+        background: #6b6b6b none repeat scroll 0 0;
+        color: #fff;
+        font-weight: 600;
+        margin: 0;
+        padding: 19px 21px;
+        text-transform: uppercase;
+        border-collapse: collapse;
+	    border: 1px solid black!important;
+    }
+
+    table thead tr th {
+        text-align: center;
+        border-left: 1px solid black;
+    }
+    /*
+    table thead tr th:not(first-child) {
+        border-left: 1px solid #ddd;
+    }
+    
+    table thead tr th:first-child {
+        border-top-left-radius: 20px;
+        border-left-style: hidden;
+        border-top-style: hidden!important;
+    }
+    table thead tr th:last-child {
+        border-top-right-radius: 20px;
+        border-right-style: hidden;
+        border-top-style: hidden!important;
+    }
+    */
+    table tbody tr td {
+        border: 1px solid #ddd;
+        background: #efefef none repeat scroll 0 0;
+    }
+    /*
+    table tbody tr td:last-child {
+        border-right-style: none;
+    }
+    table tbody tr td:first-child {
+        background: #da9748 none repeat scroll 0 0;
+    }
+    */
+    table tbody tr td:first-child:hover {
+        background:  #e5a253;
+        cursor:pointer;
+        -webkit-transition: all .35s;
+        -moz-transition: all .35s;
+        transition: all .35s;
+    }
+
+    .marginTop5 {
+        margin-top: 5px;
+    }
+
+    /*** PARA FORMULARIOS ***/
+
+    form{
+    	background:@light-black;
+    	padding: 6px 6px;
+    	border-radius: 10px;
+    }
+
+ 
+}
